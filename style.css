@@ -1,0 +1,316 @@
+@font-face {
+    font-family: calFont;
+    font-weight: 500;
+    src:url("font/SpaceMono-Bold.ttf");
+}
+@font-face {
+    font-family: calFont;
+    font-weight: 300;
+    src:url("font/SpaceMono-Regular.ttf");
+}
+
+
+html,
+body{
+background-color: #F2F2F2;
+    font-family: "calFont";
+    
+
+}
+section{
+    background-color: #C5E4E7;
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    font-family: "calFont";
+    padding-top: 163px;
+    margin: 0 auto;
+}
+h1{
+    padding: 163 677;
+    letter-spacing: 3px;
+    color:  #3D6666;
+   
+   
+}
+#cal-logo{
+    background-image: url("img/logo.svg");
+    margin: 0 auto;
+    width: 86.66px;
+    height: 53.14px;
+    display: block;
+    background-repeat: no-repeat;
+   
+}
+
+
+form{
+    position: absolute;
+    width: 920px;
+    height: 481px;
+    left: 260px;
+    top: 304px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+.response{
+    display: inline-block;
+    background-color: #00474B;
+    position: absolute;
+    width: 413px;
+    height: 417px;
+    left: 475px;
+    top: 33px;
+    color: #FFFFFF;
+   
+    border-radius: 15px;
+    
+}
+.resetbtn{
+    background-color: #0D686D;
+    left: 30px;
+    width: 333px;
+    height: 48px;
+    border-radius: 5px;
+    border: none;
+    font-family: "calfont";
+    color: #00474B;
+    font-size: 20px;
+    left: 30px;
+   }            
+button.resetbtn:hover{
+    background-color: #9FE8DF;
+
+}
+
+.firstline p{
+    display: inline-block;
+    
+}
+
+#tip{
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 0px;
+}
+#sub1{
+    padding-top: 0px;
+    padding-left: 30px;
+    color: #7F9D9F;
+
+}
+
+#cal{
+    float: right;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 48px;
+    color: #26C2AE;
+
+    
+}
+
+.clear-fix::after{
+    content:"" ;
+    clear: both;
+    display: table;
+
+}
+
+.totalsec p{
+    display:inline-block;
+
+}  
+
+
+
+#totaldiscount{
+   
+    padding-top: 20px;
+    padding-left: 30px;
+  
+}
+#sub2{
+    padding-top: 0px;
+    padding-left: 30px;
+    color: #7F9D9F;
+}
+
+#total1{
+    float:right;
+    padding-right: 40px;
+    padding-top: 0px;
+    color: #26C2AE;
+    font-size: 48px;
+
+}
+
+
+.inputBox{
+    
+    font-weight: 500;
+    position: absolute;
+    width: 413px;
+    height: 417px;
+    left: 38px;
+    top: 33px;  
+   
+}
+.numpeop p{
+    display: inline-block;
+
+}
+#alert1{
+    float: right;
+    color: rgb(238, 119, 119);
+    padding-right: 67px;
+}
+
+
+.btn5{
+        font-family: "calfont";
+        font-weight: 500;
+        font-size: 24;
+        position: absolute;
+        background: #00474B;
+        height: 48px;
+        width: 117px;
+        left: 0px;
+        top: 175px;
+        border-radius: 5px;
+        color: #FFFFFF;
+       
+        
+        }
+button.btn5:hover ,
+button.btn10:hover,
+button.btn15:hover,
+button.btn25:hover,
+button.btn50:hover,
+button.resetbttn:hover
+{
+    background-color: #9FE8DF;
+}
+button.btn5:active ,
+button.btn10:active,
+button.btn15:active,
+button.btn25:active,
+button.btn50:active{
+    background-color: #26C2AE;
+}
+.btn10{
+    font-family: "calfont";
+    font-weight: 500;
+    font-size: 24;
+    position: absolute;
+    background: #00474B;
+    height: 48px;
+    width: 117px;
+    left: 130px;
+    top: 175px;
+    border-radius: 5px;
+    color: #FFFFFF;
+            
+            }
+.btn15{
+    font-family: "calfont";
+    font-weight: 500;
+    font-size: 24;
+    position: absolute;
+    background: #00474B;
+    height: 48px;
+    width: 117px;
+    left: 260px;
+    top: 175px;
+    border-radius: 5px;
+    color: #FFFFFF;
+                
+                }
+ .btn25{
+    font-family: "calfont";
+    font-weight: 500;
+    font-size: 24;
+    position: absolute;
+    background: #00474B;
+    height: 48px;
+    width: 117px;
+    left: 0px;
+    top: 235px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    
+    }
+ .btn50{
+    font-family: "calfont";
+    font-weight: 500;
+    font-size: 24;
+        position: absolute;
+        background: #00474B;
+        height: 48px;
+        width: 117px;
+        left: 130px;
+        top: 235px;
+        border-radius: 5px;
+        color: #FFFFFF;
+        
+} 
+#num{
+    font-family: "calfont";
+    font-weight: 500;
+    font-size: 24;
+    background-color: #F3F9FA;
+    text-align: right;
+    width: 347px;
+    height: 48px;
+    border-radius: 5px;
+    background-image: url("img/icon-dollar.svg");
+    background-position: 15px 15px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px; 
+}
+#people{
+    font-family: "calfont";
+    font-weight: 500;
+    font-size: 24;
+    background-color: #F3F9FA;
+    text-align: right;
+    width: 347px;
+    height: 48px;
+    fill: solid;
+    border-radius: 5px;
+    background-image: url("img/icon-person.svg");
+    background-position: 15px 15px; 
+    background-repeat: no-repeat;
+  
+
+}
+
+
+#costum{
+    font-family: "calfont";
+    font-weight: 500;
+    font-size: 24;
+    font-weight: 500;
+    float: right;
+    margin-top: 8px;
+    margin-right: 33px;
+    height: 48px;
+    width: 117px;
+    color: #00474B;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align:right;
+    
+
+}
+
+
+
+
+
+

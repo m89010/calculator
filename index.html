@@ -1,0 +1,106 @@
+<html>
+    <header>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css"/>
+    </header>
+
+    <body>
+        
+        <section>
+            <!--<h1>SPLI<br/>TTER</h1>-->
+            <a href="/" id="cal-logo"></a>
+            <form name="form1">
+                
+                <div class="inputBox">
+                    <p>Bill</p> <input id="num" type="text" name="inputnumber">
+                    <br/><br/><p>Select Tip %</p>
+                    <!--<input type="button" value="5%" onclick="form1.result.value+=eval((form1.inputnumber.value*5/100)/eval(form1.peopleNumber.value))"> -->
+                        
+                        <button type="button" class="btn5" value="5%" id="button5" onclick="myFunction2(form1.inputnumber.value,5,form1.peopleNumber.value)">5%</button>
+                        <button type="button" class="btn10" value="10%" id="button10" onclick="myFunction2(form1.inputnumber.value,10,form1.peopleNumber.value)">10%</button>
+                        <button type="button" class="btn15" value="15%" id="button15" onclick="myFunction2(form1.inputnumber.value,15,form1.peopleNumber.value)">15%</button><br/><br>
+                        <button type="button" class="btn25" value="25%" id="button25" onclick="myFunction2(form1.inputnumber.value,25,form1.peopleNumber.value)">25%</button>
+                        <button type="button" class="btn50" value="50%" id="button50" onclick="myFunction2(form1.inputnumber.value,50,form1.peopleNumber.value)">50%</button>
+                        <!--<input id="costum" type="text" name="costum" oninput="myFunction()">-->
+                        <input id="costum" type="text" name="costum" placeholder="COSTUM" oninput="myFunction2(form1.inputnumber.value,form1.costum.value,form1.peopleNumber.value)"><br/><br>
+                        <br/><br/>
+                        <div class="numpeop">
+                            <p>Number Of Poeple</p> <p id="alert1"></p><br/>
+                            <input id="people" type="text" name="peopleNumber" oninput="alert1fun()">
+                        </div>
+                                                 
+                    <script>
+                        function myFunction2(num1,costum1,people1) {
+                            if(people1==0){
+                                document.getElementById("alert1").innerHTML="Can't be zero";
+                            }
+                            else{
+                                var calcu = ((num1*costum1)/100)/people1;
+                                var totaldiscount= (num1/people1)+calcu;                
+                                document.getElementById("cal").innerHTML = calcu.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+                                document.getElementById("total1").innerHTML=totaldiscount.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+                               
+                            }
+                               
+                        }
+                    </script>
+                    <script>
+                        function alert1fun(){
+                            document.getElementById("alert1").innerHTML="";
+                            var calcu = 0;
+                            var totaldiscount= 0; 
+                            document.getElementById("cal").innerHTML = calcu.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+                            document.getElementById("total1").innerHTML=totaldiscount.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+                               
+                        }
+                    </script>
+
+                </div>
+
+              
+                <div class="response">
+                    <div class="firstline">
+                        <p id="tip">Tip Amount</p>   
+                        <p id="cal" >
+                            <script>
+                                var x=new Number(0);
+                                document.getElementById("cal").innerHTML = x.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+
+                            </script> 
+                        </p><br/>
+                        <sub id="sub1">/ person</sub>
+                    </div> 
+                <div class="totalsec">
+                          <p id="totaldiscount">Total</p><br/>
+                                    <sub id="sub2">/ person</sub> 
+                         
+                                    <p id="total1" >
+                                    <script>
+                                        var x=new Number(0);
+                                            document.getElementById("total1").innerHTML = x.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+
+                                    </script> 
+                                    </p>
+                            
+                                <button type="reset" class="resetbtn" id="resetbutton" value="RESET" onclick="alert1fun()">RESET</button>
+                                 
+
+                </div>  
+                    
+                   
+                       
+                </div>
+               
+
+            </form>
+         
+
+        </section>
+       
+
+
+    </body>
+
+
+
+</html>
